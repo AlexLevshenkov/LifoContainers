@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
 		EBF842052BEB95E0004A2857 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842042BEB95E0004A2857 /* Stack.swift */; };
-		EBF8420D2BEB9650004A2857 /* LifoContainersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8420C2BEB9650004A2857 /* LifoContainersTests.swift */; };
 		EBF8420E2BEB9650004A2857 /* LifoContainers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */; };
 		EBFA8F502BEAE9B0003A900D /* LifoContainers.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFA8F442BEAE9B0003A900D /* LifoContainers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -28,7 +27,6 @@
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
 		EBF842042BEB95E0004A2857 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		EBF8420A2BEB9650004A2857 /* LifoContainersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifoContainersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBF8420C2BEB9650004A2857 /* LifoContainersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifoContainersTests.swift; sourceTree = "<group>"; };
 		EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LifoContainers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFA8F442BEAE9B0003A900D /* LifoContainers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifoContainers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +69,6 @@
 		EBF8420B2BEB9650004A2857 /* LifoContainersTests */ = {
 			isa = PBXGroup;
 			children = (
-				EBF8420C2BEB9650004A2857 /* LifoContainersTests.swift */,
 			);
 			path = LifoContainersTests;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBF8420D2BEB9650004A2857 /* LifoContainersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
