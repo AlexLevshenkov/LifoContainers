@@ -8,13 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		EB5F020C2BEBBE7D00CEF494 /* StackStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */; };
+		EB5F02292BEBC9AE00CEF494 /* LifoContainers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */; };
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
 		EBF842052BEB95E0004A2857 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842042BEB95E0004A2857 /* Stack.swift */; };
 		EBFA8F502BEAE9B0003A900D /* LifoContainers.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFA8F442BEAE9B0003A900D /* LifoContainers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EB5F022A2BEBC9AE00CEF494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBFA8F382BEAE9B0003A900D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBFA8F402BEAE9B0003A900D;
+			remoteInfo = LifoContainers;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatistics.swift; sourceTree = "<group>"; };
+		EB5F02252BEBC9AE00CEF494 /* LifoContainersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifoContainersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
 		EBF842042BEB95E0004A2857 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LifoContainers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +34,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EB5F02222BEBC9AE00CEF494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5F02292BEBC9AE00CEF494 /* LifoContainers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBFA8F3E2BEAE9B0003A900D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,6 +52,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB5F02262BEBC9AE00CEF494 /* LifoContainersTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LifoContainersTests;
+			sourceTree = "<group>";
+		};
 		EBF842002BEB9442004A2857 /* LIFO */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				EBFA8F432BEAE9B0003A900D /* LifoContainers */,
+				EB5F02262BEBC9AE00CEF494 /* LifoContainersTests */,
 				EBFA8F422BEAE9B0003A900D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */,
+				EB5F02252BEBC9AE00CEF494 /* LifoContainersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +118,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		EB5F02242BEBC9AE00CEF494 /* LifoContainersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB5F022E2BEBC9AE00CEF494 /* Build configuration list for PBXNativeTarget "LifoContainersTests" */;
+			buildPhases = (
+				EB5F02212BEBC9AE00CEF494 /* Sources */,
+				EB5F02222BEBC9AE00CEF494 /* Frameworks */,
+				EB5F02232BEBC9AE00CEF494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB5F022B2BEBC9AE00CEF494 /* PBXTargetDependency */,
+			);
+			name = LifoContainersTests;
+			productName = LifoContainersTests;
+			productReference = EB5F02252BEBC9AE00CEF494 /* LifoContainersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EBFA8F402BEAE9B0003A900D /* LifoContainers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBFA8F532BEAE9B0003A900D /* Build configuration list for PBXNativeTarget "LifoContainers" */;
@@ -117,6 +164,9 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					EB5F02242BEBC9AE00CEF494 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					EBFA8F402BEAE9B0003A900D = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -136,11 +186,19 @@
 			projectRoot = "";
 			targets = (
 				EBFA8F402BEAE9B0003A900D /* LifoContainers */,
+				EB5F02242BEBC9AE00CEF494 /* LifoContainersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EB5F02232BEBC9AE00CEF494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBFA8F3F2BEAE9B0003A900D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +209,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EB5F02212BEBC9AE00CEF494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBFA8F3D2BEAE9B0003A900D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,7 +228,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EB5F022B2BEBC9AE00CEF494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBFA8F402BEAE9B0003A900D /* LifoContainers */;
+			targetProxy = EB5F022A2BEBC9AE00CEF494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		EB5F022C2BEBC9AE00CEF494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TQZNJD942K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.levshenkov.LifoContainersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB5F022D2BEBC9AE00CEF494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TQZNJD942K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.levshenkov.LifoContainersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EBFA8F512BEAE9B0003A900D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -371,6 +484,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EB5F022E2BEBC9AE00CEF494 /* Build configuration list for PBXNativeTarget "LifoContainersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB5F022C2BEBC9AE00CEF494 /* Debug */,
+				EB5F022D2BEBC9AE00CEF494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EBFA8F3B2BEAE9B0003A900D /* Build configuration list for PBXProject "LifoContainers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
