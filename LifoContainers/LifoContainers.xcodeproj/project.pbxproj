@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
+		EBF842052BEB95E0004A2857 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842042BEB95E0004A2857 /* Stack.swift */; };
 		EBFA8F502BEAE9B0003A900D /* LifoContainers.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFA8F442BEAE9B0003A900D /* LifoContainers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
+		EBF842042BEB95E0004A2857 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LifoContainers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFA8F442BEAE9B0003A900D /* LifoContainers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifoContainers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,6 +38,14 @@
 			path = LIFO;
 			sourceTree = "<group>";
 		};
+		EBF842032BEB95CD004A2857 /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				EBF842042BEB95E0004A2857 /* Stack.swift */,
+			);
+			path = Stacks;
+			sourceTree = "<group>";
+		};
 		EBFA8F372BEAE9B0003A900D = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 			children = (
 				EBFA8F442BEAE9B0003A900D /* LifoContainers.h */,
 				EBF842002BEB9442004A2857 /* LIFO */,
+				EBF842032BEB95CD004A2857 /* Stacks */,
 			);
 			path = LifoContainers;
 			sourceTree = "<group>";
@@ -142,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF842052BEB95E0004A2857 /* Stack.swift in Sources */,
 				EBF842022BEB9474004A2857 /* LIFO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
