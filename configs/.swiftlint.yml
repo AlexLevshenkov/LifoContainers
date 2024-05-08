@@ -40,7 +40,6 @@ opt_in_rules:
   - identifier_name
   - implicit_getter
   - inclusive_language
-  - indentation_width
   - invalid_swiftlint_command
   - is_disjoint
   - large_tuple
@@ -168,6 +167,7 @@ disabled_rules:
   - identical_operands
   - implicit_return
   - implicitly_unwrapped_optional
+  - indentation_width
   - inert_defer
   - joined_default_parameter
   - last_where
