@@ -2,6 +2,13 @@
 
 Library containing various flavours of Last-In-First-Out (LIFO) data structures.
 
+## Contents
+
+- [Installation](#installation)
+- [Versioning](#versioning)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Installation
 
 TBD
