@@ -10,6 +10,7 @@
 		EB5F020C2BEBBE7D00CEF494 /* StackStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */; };
 		EB5F02292BEBC9AE00CEF494 /* LifoContainers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */; };
 		EBA33EB32BED4CF100B85BD5 /* StackTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */; };
+		EBA33EB52BED4E2200B85BD5 /* StackStatisticsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */; };
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
 		EBF842052BEB95E0004A2857 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842042BEB95E0004A2857 /* Stack.swift */; };
 		EBFA8F502BEAE9B0003A900D /* LifoContainers.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFA8F442BEAE9B0003A900D /* LifoContainers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 		EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatistics.swift; sourceTree = "<group>"; };
 		EB5F02252BEBC9AE00CEF494 /* LifoContainersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifoContainersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTestCases.swift; sourceTree = "<group>"; };
+		EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatisticsTestCases.swift; sourceTree = "<group>"; };
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
 		EBF842042BEB95E0004A2857 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LifoContainers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */,
+				EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */,
 			);
 			path = LifoContainersTests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBA33EB32BED4CF100B85BD5 /* StackTestCases.swift in Sources */,
+				EBA33EB52BED4E2200B85BD5 /* StackStatisticsTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
