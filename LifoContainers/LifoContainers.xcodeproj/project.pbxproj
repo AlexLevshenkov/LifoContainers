@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB5F020C2BEBBE7D00CEF494 /* StackStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */; };
 		EB5F02292BEBC9AE00CEF494 /* LifoContainers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */; };
+		EBA33EB32BED4CF100B85BD5 /* StackTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */; };
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
 		EBF842052BEB95E0004A2857 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842042BEB95E0004A2857 /* Stack.swift */; };
 		EBFA8F502BEAE9B0003A900D /* LifoContainers.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFA8F442BEAE9B0003A900D /* LifoContainers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatistics.swift; sourceTree = "<group>"; };
 		EB5F02252BEBC9AE00CEF494 /* LifoContainersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifoContainersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTestCases.swift; sourceTree = "<group>"; };
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
 		EBF842042BEB95E0004A2857 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LifoContainers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,7 @@
 		EB5F02262BEBC9AE00CEF494 /* LifoContainersTests */ = {
 			isa = PBXGroup;
 			children = (
+				EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */,
 			);
 			path = LifoContainersTests;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				TargetAttributes = {
 					EB5F02242BEBC9AE00CEF494 = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 					EBFA8F402BEAE9B0003A900D = {
 						CreatedOnToolsVersion = 15.3;
@@ -213,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA33EB32BED4CF100B85BD5 /* StackTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +245,7 @@
 		EB5F022C2BEBC9AE00CEF494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TQZNJD942K;
@@ -252,6 +258,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -260,6 +267,7 @@
 		EB5F022D2BEBC9AE00CEF494 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TQZNJD942K;
