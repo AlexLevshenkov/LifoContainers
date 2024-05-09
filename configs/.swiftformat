@@ -1,0 +1,164 @@
+# Version limitations
+
+--swiftversion 5.10
+--minversion 0.53.8
+
+# Customized format options
+
+--maxwidth 100
+--indent 4
+
+--wraparguments before-first
+--wrapcollections before-first
+--wrapconditions after-first
+--wrapparameters before-first
+
+# Format options
+
+--lineaftermarks true
+--typeblanklines remove
+--allman false
+--elseposition same-line
+--guardelse auto
+--emptybraces no-space
+--enumnamespaces always
+--patternlet hoist
+--tabwidth unspecified
+--smarttabs enabled
+--indentcase false
+--ifdef indent
+--xcodeindentation disabled
+--indentstrings false
+--linebreaks lf
+--someany false
+--anonymousforeach ignore
+--onelineforeach ignore
+--self remove
+--closurevoid remove
+--semicolons inline
+--importgrouping alpha
+--operatorfunc spaced
+--ranges no-space
+--commas always
+--trimwhitespace always
+--shortoptionals except-properties
+--stripunusedargs always
+--voidtype void
+--maxwidth none
+--closingparen balanced
+--wrapreturntype preserve
+--yodaswap always
+--decimalgrouping 3,4
+--binarygrouping 4,8
+--octalgrouping 4,8
+--hexgrouping 4,8
+--fractiongrouping disabled
+--exponentgrouping disabled
+--hexliteralcase uppercase
+--exponentcase uppercase
+
+# Enabled rules
+
+--enable andOperator
+--enable anyObjectProtocol
+--enable applicationMain
+--enable assertionFailures
+--enable blankLineAfterImports
+--enable blankLinesAroundMark
+--enable blankLinesAtEndOfScope
+--enable blankLinesAtStartOfScope
+--enable blankLinesBetweenChainedFunctions
+--enable blankLinesBetweenScopes
+--enable braces 
+--enable conditionalAssignment
+--enable consecutiveBlankLines
+--enable consecutiveSpaces
+--enable duplicateImports
+--enable elseOnSameLine
+--enable emptyBraces
+--enable enumNamespaces
+--enable fileHeader
+--enable genericExtensions
+--enable headerFileName
+--enable hoistAwait
+--enable hoistPatternLet
+--enable hoistTry
+--enable indent
+--enable initCoderUnavailable
+--enable isEmpty
+--enable leadingDelimiters
+--enable linebreakAtEndOfFile
+--enable linebreaks
+--enable modifierOrder
+--enable numberFormatting
+--enable opaqueGenericParameters
+--enable preferForLoop
+--enable preferKeyPath
+--enable redundantBackticks
+--enable redundantBreak
+--enable redundantClosure
+--enable redundantExtensionACL
+--enable redundantFileprivate
+--enable redundantGet
+--enable redundantInit
+--enable redundantInternal
+--enable redundantLet
+--enable redundantLetError
+--enable redundantNilInit
+--enable redundantObjc
+--enable redundantOptionalBinding
+--enable redundantParens
+--enable redundantPattern
+--enable redundantRawValues
+--enable redundantReturn
+--enable redundantSelf
+--enable redundantStaticSelf
+--enable redundantVoidReturnType
+--enable semicolons
+--enable sortDeclarations
+--enable sortImports
+--enable sortTypealiases
+--enable spaceAroundBraces
+--enable spaceAroundBrackets
+--enable spaceAroundComments
+--enable spaceAroundGenerics
+--enable spaceAroundOperators 
+--enable spaceAroundParens
+--enable spaceInsideBraces
+--enable spaceInsideBrackets
+--enable spaceInsideComments
+--enable spaceInsideGenerics
+--enable spaceInsideParens
+--enable strongOutlets
+--enable strongifiedSelf
+--enable todos
+--enable trailingClosures
+--enable trailingCommas
+--enable trailingSpace
+--enable typeSugar
+--enable unusedArguments 
+--enable void
+--enable wrap
+--enable wrapArguments
+--enable wrapAttributes
+--enable wrapLoopBodies
+--enable wrapMultilineStatementBraces
+--enable wrapSingleLineComments
+--enable docComments
+
+# Disabled rules
+
+--disable yodaConditions
+--disable acronyms
+--disable blankLinesBetweenImports
+--disable blockComments
+--disable markTypes
+--disable noExplicitOwnership
+--disable organizeDeclarations
+--disable sortSwitchCases
+--disable wrapConditionalBodies
+--disable wrapEnumCases
+--disable wrapMultilineConditionalAssignment
+--disable wrapSwitchCases
+--disable redundantType
+--disable extensionAccessControl
