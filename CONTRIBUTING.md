@@ -25,9 +25,14 @@ Before submitting a pull request, please search for [an open or closed pull requ
 When creating a pull request please consider following:
 
 - **Always make a new branch** for your work. This makes it easier for others to take just one set of changes form your repository.
-- **Follow our code style.** [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) and [SwiftLint](https://github.com/realm/SwiftLint) can do all work for you. You can find configurations in [configs](./configs/) folder.
+- **Follow our code style.** [SwiftFormat and SwiftLint](#code-linters-requirements) can do all work for you. You can find configurations in [configs](./configs/) folder.
 - **Please do not submit unrelated changes** in the same pull request.
 - **Use a clear and descriptive title** for the pull request.
 - **Describe a clear list of things** that you have done in this pull request.
 - **Include relevant issue number** if applicable.
 - **Consider adding unit tests.** We'd be really grateful if you add unit test for your feature/bugfix!
+
+### Code linters requirements
+
+- [SwiftFormat 0.53.8+](https://github.com/nicklockwood/SwiftFormat)
+- [SwiftLint 0.53.0+](https://github.com/realm/SwiftLint)
