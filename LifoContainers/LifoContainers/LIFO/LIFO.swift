@@ -1,10 +1,3 @@
-//
-//  LIFO.swift
-//  LifoContainers
-//
-//  Created by Alex Levshenkov on 8.05.24.
-//
-
 /// The Last-In-First-Out (LIFO) protocol represents a data structure where elements are added and
 /// removed in a specific order: **the last element that is added is the first one to be removed.**
 ///

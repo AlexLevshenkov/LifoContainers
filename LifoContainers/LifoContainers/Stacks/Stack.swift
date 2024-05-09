@@ -1,10 +1,3 @@
-//
-//  Stack.swift
-//  LifoContainers
-//
-//  Created by Alex Levshenkov on 8.05.24.
-//
-
 /// An abstract data type that serves as a collection of elements.
 ///
 /// [Stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) is a Last-In-First-Out (LIFO)

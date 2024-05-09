@@ -1,10 +1,3 @@
-//
-//  StackStatistics.swift
-//  LifoContainers
-//
-//  Created by Alex Levshenkov on 8.05.24.
-//
-
 /// An abstract data type that serves as a collection of elements.
 ///
 /// The `StackStatistics` is a specialized variation of the
