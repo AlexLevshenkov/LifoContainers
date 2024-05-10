@@ -20,7 +20,7 @@ If you are having difficulties using `LifoContainers` or have a question about u
 
 ## Contributing Changes
 
-Before submitting a pull request, please search for [an open or closed pull request](https://github.com/AlexLevshenkov/LifoContainers/pulls) that relates to your submission. You don't want to duplicate effort.
+Before submitting a pull request, please search for [an open or closed pull request](https://github.com/AlexLevshenkov/LifoContainers/pulls) that relates to your submission.
 
 When creating a pull request please consider following:
 
