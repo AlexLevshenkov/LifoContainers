@@ -5,7 +5,6 @@ Library containing various flavours of Last-In-First-Out (LIFO) data structures.
 ## Contents
 
 - [Requirements](#requirements)
-- [Installation](#installation)
 - [Versioning](#versioning)
 - [Contributing](#contributing)
 - [License](#license)
@@ -15,10 +14,6 @@ Library containing various flavours of Last-In-First-Out (LIFO) data structures.
 - iOS 12.0+ / macOS 10.13+
 - Xcode 15.2+
 - Swift 5.9+
-
-## Installation
-
-TBD
 
 ## Versioning
 
