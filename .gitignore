@@ -1,3 +1,7 @@
 # Xcode Project
 
 xcuserdata/
+
+# Folder containing the built .xcframework binary
+
+build/
