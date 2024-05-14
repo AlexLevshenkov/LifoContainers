@@ -16,6 +16,7 @@
 		EB5F1E702BF3DBA50070C379 /* StackCountTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E6F2BF3DBA50070C379 /* StackCountTestCases.swift */; };
 		EB5F1E722BF3DD5E0070C379 /* StackStatisticsCountTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E712BF3DD5E0070C379 /* StackStatisticsCountTestCases.swift */; };
 		EB5F1E742BF3E8B70070C379 /* StackStatisticsGenericTypeTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E732BF3E8B70070C379 /* StackStatisticsGenericTypeTestCases.swift */; };
+		EB5F1E762BF3E90B0070C379 /* StackStatisticsPopTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E752BF3E90B0070C379 /* StackStatisticsPopTestCases.swift */; };
 		EBA33EB52BED4E2200B85BD5 /* StackStatisticsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */; };
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
 		EBF842052BEB95E0004A2857 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842042BEB95E0004A2857 /* Stack.swift */; };
@@ -42,6 +43,7 @@
 		EB5F1E6F2BF3DBA50070C379 /* StackCountTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCountTestCases.swift; sourceTree = "<group>"; };
 		EB5F1E712BF3DD5E0070C379 /* StackStatisticsCountTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatisticsCountTestCases.swift; sourceTree = "<group>"; };
 		EB5F1E732BF3E8B70070C379 /* StackStatisticsGenericTypeTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatisticsGenericTypeTestCases.swift; sourceTree = "<group>"; };
+		EB5F1E752BF3E90B0070C379 /* StackStatisticsPopTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatisticsPopTestCases.swift; sourceTree = "<group>"; };
 		EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatisticsTestCases.swift; sourceTree = "<group>"; };
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
 		EBF842042BEB95E0004A2857 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				EB5F1E712BF3DD5E0070C379 /* StackStatisticsCountTestCases.swift */,
 				EB5F1E732BF3E8B70070C379 /* StackStatisticsGenericTypeTestCases.swift */,
+				EB5F1E752BF3E90B0070C379 /* StackStatisticsPopTestCases.swift */,
 				EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */,
 			);
 			path = StackStatisticsTests;
@@ -265,6 +268,7 @@
 				EB5F1E722BF3DD5E0070C379 /* StackStatisticsCountTestCases.swift in Sources */,
 				EB5F1E702BF3DBA50070C379 /* StackCountTestCases.swift in Sources */,
 				EBA33EB52BED4E2200B85BD5 /* StackStatisticsTestCases.swift in Sources */,
+				EB5F1E762BF3E90B0070C379 /* StackStatisticsPopTestCases.swift in Sources */,
 				EB5F1E742BF3E8B70070C379 /* StackStatisticsGenericTypeTestCases.swift in Sources */,
 				EB5F1E6C2BF3D8EC0070C379 /* StackTopTestCases.swift in Sources */,
 				EB5F1E6A2BF3D7DE0070C379 /* StackPopTestCases.swift in Sources */,
