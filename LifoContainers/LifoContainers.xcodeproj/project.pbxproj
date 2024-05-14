@@ -13,6 +13,7 @@
 		EB5F1E6A2BF3D7DE0070C379 /* StackPopTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E692BF3D7DE0070C379 /* StackPopTestCases.swift */; };
 		EB5F1E6C2BF3D8EC0070C379 /* StackTopTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E6B2BF3D8EC0070C379 /* StackTopTestCases.swift */; };
 		EB5F1E6E2BF3D9BC0070C379 /* StackGenericTypeTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E6D2BF3D9BC0070C379 /* StackGenericTypeTestCases.swift */; };
+		EB5F1E702BF3DBA50070C379 /* StackCountTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E6F2BF3DBA50070C379 /* StackCountTestCases.swift */; };
 		EBA33EB52BED4E2200B85BD5 /* StackStatisticsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */; };
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
 		EBF842052BEB95E0004A2857 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842042BEB95E0004A2857 /* Stack.swift */; };
@@ -36,6 +37,7 @@
 		EB5F1E692BF3D7DE0070C379 /* StackPopTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackPopTestCases.swift; sourceTree = "<group>"; };
 		EB5F1E6B2BF3D8EC0070C379 /* StackTopTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTopTestCases.swift; sourceTree = "<group>"; };
 		EB5F1E6D2BF3D9BC0070C379 /* StackGenericTypeTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackGenericTypeTestCases.swift; sourceTree = "<group>"; };
+		EB5F1E6F2BF3DBA50070C379 /* StackCountTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCountTestCases.swift; sourceTree = "<group>"; };
 		EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatisticsTestCases.swift; sourceTree = "<group>"; };
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
 		EBF842042BEB95E0004A2857 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		EB5F1E652BF3C6AD0070C379 /* StackTests */ = {
 			isa = PBXGroup;
 			children = (
+				EB5F1E6F2BF3DBA50070C379 /* StackCountTestCases.swift */,
 				EB5F1E6D2BF3D9BC0070C379 /* StackGenericTypeTestCases.swift */,
 				EB5F1E692BF3D7DE0070C379 /* StackPopTestCases.swift */,
 				EB5F1E672BF3CA420070C379 /* StackPushTestCases.swift */,
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5F1E702BF3DBA50070C379 /* StackCountTestCases.swift in Sources */,
 				EBA33EB52BED4E2200B85BD5 /* StackStatisticsTestCases.swift in Sources */,
 				EB5F1E6C2BF3D8EC0070C379 /* StackTopTestCases.swift in Sources */,
 				EB5F1E6A2BF3D7DE0070C379 /* StackPopTestCases.swift in Sources */,
