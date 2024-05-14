@@ -1,10 +1,3 @@
-//
-//  StackPushTestCases.swift
-//  LifoContainersTests
-//
-//  Created by Alex Levshenkov on 14.05.24.
-//
-
 import XCTest
 @testable import LifoContainers
 
