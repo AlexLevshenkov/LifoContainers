@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB5F020C2BEBBE7D00CEF494 /* StackStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */; };
 		EB5F02292BEBC9AE00CEF494 /* LifoContainers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */; };
+		EB5F1E682BF3CA420070C379 /* StackPushTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F1E672BF3CA420070C379 /* StackPushTestCases.swift */; };
 		EBA33EB32BED4CF100B85BD5 /* StackTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */; };
 		EBA33EB52BED4E2200B85BD5 /* StackStatisticsTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */; };
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatistics.swift; sourceTree = "<group>"; };
 		EB5F02252BEBC9AE00CEF494 /* LifoContainersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifoContainersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5F1E672BF3CA420070C379 /* StackPushTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackPushTestCases.swift; sourceTree = "<group>"; };
 		EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTestCases.swift; sourceTree = "<group>"; };
 		EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatisticsTestCases.swift; sourceTree = "<group>"; };
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		EB5F1E652BF3C6AD0070C379 /* StackTests */ = {
 			isa = PBXGroup;
 			children = (
+				EB5F1E672BF3CA420070C379 /* StackPushTestCases.swift */,
 				EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */,
 			);
 			path = StackTests;
@@ -246,6 +249,7 @@
 			files = (
 				EBA33EB32BED4CF100B85BD5 /* StackTestCases.swift in Sources */,
 				EBA33EB52BED4E2200B85BD5 /* StackStatisticsTestCases.swift in Sources */,
+				EB5F1E682BF3CA420070C379 /* StackPushTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
