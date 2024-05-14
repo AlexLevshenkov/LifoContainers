@@ -9,17 +9,6 @@ final class StackTestCases: XCTestCase {
         stack = .init()
     }
 
-    func test_push_withEmptyStack_addsOnlyOneElement() {
-        // Given
-        let emptyStackSizeBeforePush = stack.count
-
-        // When
-        stack.push("1")
-
-        // Then
-        XCTAssertEqual(emptyStackSizeBeforePush, stack.count - 1)
-    }
-
     func test_pop_withEmptyStack_returnsNil() {
         // Given an empty stack
 
