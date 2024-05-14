@@ -5,6 +5,7 @@ Library containing various flavours of Last-In-First-Out (LIFO) data structures.
 ## Contents
 
 - [Requirements](#requirements)
+- [Build `.xcframework` by yourself](#build-xcframework-by-yourself)
 - [Versioning](#versioning)
 - [Contributing](#contributing)
 - [License](#license)
@@ -14,6 +15,10 @@ Library containing various flavours of Last-In-First-Out (LIFO) data structures.
 - iOS 12.0+ / macOS 10.13+
 - Xcode 15.2+
 - Swift 5.9+
+
+## Build `.xcframework` by yourself
+
+You may want to build the binary `.xcframework` file yourself from the source code. To do so you need to run the `build-xcframework.sh` script in a [scripts](./scripts/) folder or you may follow [instructions](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle#Create-archives-for-frameworks-or-libraries) provided by Apple.
 
 ## Versioning
 
