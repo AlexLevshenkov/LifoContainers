@@ -25,7 +25,7 @@ Before submitting a pull request, please search for [an open or closed pull requ
 When creating a pull request please consider following:
 
 - **Always make a new branch** for your work. This makes it easier for others to take just one set of changes form your repository.
-- **Follow our code style.** [SwiftFormat and SwiftLint](#code-linters-requirements) can do all work for you. You can find configurations in [configs](./configs/) folder.
+- **Follow our code style.** [SwiftFormat and SwiftLint](#code-linters-requirements) can do all work for you: please run [`run-linters.sh`](./scripts/) script. You can find configurations in [configs](./configs/) folder.
 - **Please do not submit unrelated changes** in the same pull request.
 - **Use a clear and descriptive title** for the pull request.
 - **Describe a clear list of things** that you have done in this pull request.
