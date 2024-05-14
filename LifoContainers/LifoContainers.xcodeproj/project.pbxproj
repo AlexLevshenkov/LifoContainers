@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB1330142BF2BB59003531FA /* StackTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1330132BF2BB59003531FA /* StackTestCases.swift */; };
 		EB5F020C2BEBBE7D00CEF494 /* StackStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */; };
 		EB5F02292BEBC9AE00CEF494 /* LifoContainers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFA8F412BEAE9B0003A900D /* LifoContainers.framework */; };
 		EBF842022BEB9474004A2857 /* LIFO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF842012BEB9474004A2857 /* LIFO.swift */; };
@@ -26,7 +25,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB1330132BF2BB59003531FA /* StackTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTestCases.swift; sourceTree = "<group>"; };
 		EB5F020B2BEBBE7D00CEF494 /* StackStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatistics.swift; sourceTree = "<group>"; };
 		EB5F02252BEBC9AE00CEF494 /* LifoContainersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifoContainersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF842012BEB9474004A2857 /* LIFO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIFO.swift; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 		EB5F02262BEBC9AE00CEF494 /* LifoContainersTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB1330132BF2BB59003531FA /* StackTestCases.swift */,
 			);
 			path = LifoContainersTests;
 			sourceTree = "<group>";
@@ -217,7 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1330142BF2BB59003531FA /* StackTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
