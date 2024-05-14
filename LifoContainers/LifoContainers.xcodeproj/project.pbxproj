@@ -59,10 +59,34 @@
 		EB5F02262BEBC9AE00CEF494 /* LifoContainersTests */ = {
 			isa = PBXGroup;
 			children = (
-				EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */,
-				EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */,
+				EB5F1E642BF3C66E0070C379 /* StacksTests */,
 			);
 			path = LifoContainersTests;
+			sourceTree = "<group>";
+		};
+		EB5F1E642BF3C66E0070C379 /* StacksTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB5F1E652BF3C6AD0070C379 /* StackTests */,
+				EB5F1E662BF3C6BC0070C379 /* StackStatisticsTests */,
+			);
+			path = StacksTests;
+			sourceTree = "<group>";
+		};
+		EB5F1E652BF3C6AD0070C379 /* StackTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBA33EB22BED4CF100B85BD5 /* StackTestCases.swift */,
+			);
+			path = StackTests;
+			sourceTree = "<group>";
+		};
+		EB5F1E662BF3C6BC0070C379 /* StackStatisticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBA33EB42BED4E2200B85BD5 /* StackStatisticsTestCases.swift */,
+			);
+			path = StackStatisticsTests;
 			sourceTree = "<group>";
 		};
 		EBF842002BEB9442004A2857 /* LIFO */ = {
