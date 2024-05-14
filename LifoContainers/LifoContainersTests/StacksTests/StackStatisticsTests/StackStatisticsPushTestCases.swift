@@ -1,7 +1,7 @@
 import XCTest
 @testable import LifoContainers
 
-final class StackStatisticsTestCases: XCTestCase {
+final class StackStatisticsPushTestCases: XCTestCase {
     private var stack: StackStatistics<Int>!
 
     override func setUp() {
