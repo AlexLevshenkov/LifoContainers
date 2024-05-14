@@ -12,11 +12,8 @@ final class StackTopTestCases: XCTestCase {
     func test_top_withEmptyStack_returnsNil() {
         // Given an empty stack
 
-        // When
-        let topElement = stack.top()
-
-        // Then
-        XCTAssertNil(topElement)
+        // When, Then
+        XCTAssertNil(stack.top())
     }
 
     func test_top_withNonEmptyStack_doesntRemoveElement() {
@@ -36,10 +33,7 @@ final class StackTopTestCases: XCTestCase {
         let lastPushedElement = "1"
         stack.push(lastPushedElement)
 
-        // When
-        let topElement = stack.top()
-
-        // Then
-        XCTAssertEqual(topElement, lastPushedElement)
+        // When, Then
+        XCTAssertEqual(stack.top(), lastPushedElement)
     }
 }

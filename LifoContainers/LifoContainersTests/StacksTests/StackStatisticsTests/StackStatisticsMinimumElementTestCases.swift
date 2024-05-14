@@ -12,22 +12,16 @@ final class StackStatisticsMinimumElementTestCases: XCTestCase {
     func test_minimumElement_withEmptyStack_returnsNil() {
         // Given an empty stack
 
-        // When
-        let minimumElement = stack.minimumElement()
-
-        // Then
-        XCTAssertNil(minimumElement)
+        // When, Then
+        XCTAssertNil(stack.minimumElement())
     }
 
     func test_minimumElement_withNonEmptyStack_returnsMinimumOne() {
         // Given
         stack = StackStatistics<Int>([Int.min + 1, Int.min, Int.max])
 
-        // When
-        let minimumElement = stack.minimumElement()
-
-        // Then
-        XCTAssertEqual(minimumElement, Int.min)
+        // When, Then
+        XCTAssertEqual(stack.minimumElement(), Int.min)
     }
 
     func test_minimumElement_withSeveralMinimumElementsInStack_returnsLaterPushedOfThem() {

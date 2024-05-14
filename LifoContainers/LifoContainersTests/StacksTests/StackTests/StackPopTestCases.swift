@@ -12,11 +12,8 @@ final class StackPopTestCases: XCTestCase {
     func test_pop_withEmptyStack_returnsNil() {
         // Given an empty stack
 
-        // When
-        let poppedElement = stack.pop()
-
-        // Then
-        XCTAssertNil(poppedElement)
+        // When, Then
+        XCTAssertNil(stack.pop())
     }
 
     func test_pop_withNonEmptyStack_removesOnlyOneElement() {
@@ -36,11 +33,8 @@ final class StackPopTestCases: XCTestCase {
         let lastPushedElement = "1"
         stack.push(lastPushedElement)
 
-        // When
-        let poppedElement = stack.pop()
-
-        // Then
-        XCTAssertEqual(poppedElement, lastPushedElement)
+        // When, Then
+        XCTAssertEqual(stack.pop(), lastPushedElement)
     }
 
     func test_pop_withNonEmptyStack_removesElementsAccordingToLifoRule() {
