@@ -19,6 +19,18 @@ struct ContentView: View {
                 .textFieldStyle(.roundedBorder)
 
             Spacer()
+
+            Button(action: {
+                inputTextValidityState = isTextValid(inputText) ? .valid : .invalid
+            }, label: {
+                Text(buttonTitle(for: inputTextValidityState))
+            })
+            .padding(5)
+            .background(
+                RoundedRectangle(cornerRadius: 10.0)
+                    .fill(borderColor(for: inputTextValidityState))
+            )
+            .disabled(inputText.isEmpty)
         }
         .padding()
     }
