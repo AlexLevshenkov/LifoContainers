@@ -1,18 +1,16 @@
 #!/usr/bin/env sh
 
-SCRIPT_FOLDER=$(dirname -- "$0")
+readonly SCRIPT_FOLDER=$(dirname -- "$0")
 cd "$SCRIPT_FOLDER" || exit
 
-# folders
-PROJECT_ROOT_FOLDER="../LifoContainers"
-TEMP_ARCHIVE_FOLDER="../archives-temp"
-OUTPUT_FOLDER="../build"
+readonly PROJECT_ROOT_FOLDER="../LifoContainers"
+readonly TEMP_ARCHIVE_FOLDER="../archives-temp"
+readonly OUTPUT_FOLDER="../build"
 
-# names of .xcarchive's
-FRAMEWORK_NAME="LifoContainers"
-IOS_SIMULATOR_ARCHIVE_NAME="${FRAMEWORK_NAME}-iOS-Simulator.xcarchive"
-IOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-iOS.xcarchive"
-MACOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-macOS.xcarchive"
+readonly FRAMEWORK_NAME="LifoContainers"
+readonly IOS_SIMULATOR_ARCHIVE_NAME="${FRAMEWORK_NAME}-iOS-Simulator.xcarchive"
+readonly IOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-iOS.xcarchive"
+readonly MACOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-macOS.xcarchive"
 
 # creating .xcarchive for specified platform
 create_archive() {
@@ -35,9 +33,12 @@ rm -rf "${OUTPUT_FOLDER}"
 
 # creating .xcframework
 xcodebuild -create-xcframework \
-    -archive "${TEMP_ARCHIVE_FOLDER}/${IOS_SIMULATOR_ARCHIVE_NAME}" -framework "${FRAMEWORK_NAME}.framework" \
-    -archive "${TEMP_ARCHIVE_FOLDER}/${IOS_ARCHIVE_NAME}" -framework "${FRAMEWORK_NAME}.framework" \
-    -archive "${TEMP_ARCHIVE_FOLDER}/${MACOS_ARCHIVE_NAME}" -framework "${FRAMEWORK_NAME}.framework" \
+    -archive "${TEMP_ARCHIVE_FOLDER}/${IOS_SIMULATOR_ARCHIVE_NAME}" \
+    -framework "${FRAMEWORK_NAME}.framework" \
+    -archive "${TEMP_ARCHIVE_FOLDER}/${IOS_ARCHIVE_NAME}" \
+    -framework "${FRAMEWORK_NAME}.framework" \
+    -archive "${TEMP_ARCHIVE_FOLDER}/${MACOS_ARCHIVE_NAME}" \
+    -framework "${FRAMEWORK_NAME}.framework" \
     -output "${OUTPUT_FOLDER}/${FRAMEWORK_NAME}.xcframework"
 
 # creating .zip
