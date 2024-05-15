@@ -4,6 +4,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var inputText = ""
+    @State private var inputTextValidityState: TextValidityState = .unknown
 
     var body: some View {
         VStack {
@@ -20,6 +21,16 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
+    }
+}
+
+// MARK: - TextValidityState
+
+private extension ContentView {
+    enum TextValidityState {
+        case valid
+        case invalid
+        case unknown
     }
 }
 
