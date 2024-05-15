@@ -34,6 +34,30 @@ private extension ContentView {
     }
 }
 
+// MARK: - Private methods
+
+private extension ContentView {
+    func isTextValid(_ text: String) -> Bool {
+        false
+    }
+
+    func borderColor(for textValidityState: TextValidityState) -> Color {
+        switch textValidityState {
+        case .valid: .green
+        case .invalid: .red
+        case .unknown: .clear
+        }
+    }
+
+    func buttonTitle(for textValidityState: TextValidityState) -> String {
+        switch textValidityState {
+        case .valid: "All parentheses are paired!"
+        case .invalid: "Something wrong with your string"
+        case .unknown: "Validate"
+        }
+    }
+}
+
 // MARK: - Preview
 
 #Preview {
