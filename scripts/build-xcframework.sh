@@ -16,11 +16,14 @@ MACOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-macOS.xcarchive"
 
 # creating .xcarchive for specified platform
 create_archive() {
+    platform=$1
+    archive_name=$2
+
     xcodebuild archive \
         -project "${PROJECT_ROOT_FOLDER}/${FRAMEWORK_NAME}.xcodeproj" \
         -scheme "${FRAMEWORK_NAME}" \
-        -destination "generic/platform=${1}" \
-        -archivePath "${TEMP_ARCHIVE_FOLDER}/${2}"
+        -destination "generic/platform=${platform}" \
+        -archivePath "${TEMP_ARCHIVE_FOLDER}/${archive_name}"
 }
 
 create_archive "iOS Simulator" ${IOS_SIMULATOR_ARCHIVE_NAME}
