@@ -14,26 +14,21 @@ IOS_SIMULATOR_ARCHIVE_NAME="${FRAMEWORK_NAME}-iOS-Simulator.xcarchive"
 IOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-iOS.xcarchive"
 MACOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-macOS.xcarchive"
 
-# creating .xcarchive for iOS Simulator
-xcodebuild archive \
-    -project "${PROJECT_ROOT_FOLDER}/${FRAMEWORK_NAME}.xcodeproj" \
-    -scheme "${FRAMEWORK_NAME}" \
-    -destination "generic/platform=iOS Simulator" \
-    -archivePath "${TEMP_ARCHIVE_FOLDER}/${IOS_SIMULATOR_ARCHIVE_NAME}"
+# creating .xcarchive for specified platform
+create_archive() {
+    xcodebuild archive \
+        -project "${PROJECT_ROOT_FOLDER}/${FRAMEWORK_NAME}.xcodeproj" \
+        -scheme "${FRAMEWORK_NAME}" \
+        -destination "generic/platform=${1}" \
+        -archivePath "${TEMP_ARCHIVE_FOLDER}/${2}"
+}
 
-# creating .xcarchive for iOS
-xcodebuild archive \
-    -project "${PROJECT_ROOT_FOLDER}/${FRAMEWORK_NAME}.xcodeproj" \
-    -scheme "${FRAMEWORK_NAME}" \
-    -destination "generic/platform=iOS" \
-    -archivePath "${TEMP_ARCHIVE_FOLDER}/${IOS_ARCHIVE_NAME}"
+create_archive "iOS Simulator" ${IOS_SIMULATOR_ARCHIVE_NAME}
+create_archive "iOS" ${IOS_ARCHIVE_NAME}
+create_archive "macOS" ${MACOS_ARCHIVE_NAME}
 
-# creating .xcarchive for macOS
-xcodebuild archive \
-    -project "${PROJECT_ROOT_FOLDER}/${FRAMEWORK_NAME}.xcodeproj" \
-    -scheme "${FRAMEWORK_NAME}" \
-    -destination "generic/platform=macOS" \
-    -archivePath "${TEMP_ARCHIVE_FOLDER}/${MACOS_ARCHIVE_NAME}"
+# Remove product folder with previous version of framework
+rm -rf "${OUTPUT_FOLDER}"
 
 # creating .xcframework
 xcodebuild -create-xcframework \
