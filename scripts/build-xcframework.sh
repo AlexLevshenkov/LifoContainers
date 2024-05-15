@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 readonly SCRIPT_FOLDER=$(dirname -- "$0")
-cd "$SCRIPT_FOLDER" || exit
+cd "${SCRIPT_FOLDER}" || exit
 
 readonly PROJECT_ROOT_FOLDER="../LifoContainers"
 readonly TEMP_ARCHIVE_FOLDER="../archives-temp"
@@ -14,8 +14,8 @@ readonly MACOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-macOS.xcarchive"
 
 # creating .xcarchive for specified platform
 create_archive() {
-    platform=${1}
-    archive_name=${2}
+    platform="${1}"
+    archive_name="${2}"
 
     xcodebuild archive \
         -project "${PROJECT_ROOT_FOLDER}/${FRAMEWORK_NAME}.xcodeproj" \
@@ -24,9 +24,9 @@ create_archive() {
         -archivePath "${TEMP_ARCHIVE_FOLDER}/${archive_name}"
 }
 
-create_archive "iOS Simulator" ${IOS_SIMULATOR_ARCHIVE_NAME}
-create_archive "iOS" ${IOS_ARCHIVE_NAME}
-create_archive "macOS" ${MACOS_ARCHIVE_NAME}
+create_archive "iOS Simulator" "${IOS_SIMULATOR_ARCHIVE_NAME}"
+create_archive "iOS" "${IOS_ARCHIVE_NAME}"
+create_archive "macOS" "${MACOS_ARCHIVE_NAME}"
 
 # Remove product folder with previous version of framework
 rm -rf "${OUTPUT_FOLDER}"
