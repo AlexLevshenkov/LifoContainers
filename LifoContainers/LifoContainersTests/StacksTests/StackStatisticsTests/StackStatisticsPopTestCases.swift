@@ -1,5 +1,5 @@
-import XCTest
 import LifoContainers
+import XCTest
 
 final class StackStatisticsPopTestCases: XCTestCase {
     private var stack = StackStatistics<Int>()

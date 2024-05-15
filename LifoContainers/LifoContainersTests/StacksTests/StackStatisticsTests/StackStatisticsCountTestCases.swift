@@ -1,5 +1,5 @@
-import XCTest
 import LifoContainers
+import XCTest
 
 final class StackStatisticsCountTestCases: XCTestCase {
     func test_count_withEmptyStack_returnsZero() {
