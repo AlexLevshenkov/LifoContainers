@@ -3,8 +3,7 @@ import SwiftUI
 // MARK: - ContentView
 
 struct ContentView: View {
-    @State private var inputText = ""
-    @State private var inputTextValidityState: TextValidityState = .unknown
+    @StateObject private var viewModel = ViewModel()
 
     var body: some View {
         VStack {
@@ -15,45 +14,34 @@ struct ContentView: View {
 
             Spacer()
 
-            TextField("Try it out!", text: $inputText)
+            TextField("Try it out!", text: $viewModel.inputText)
                 .textFieldStyle(.roundedBorder)
 
             Spacer()
 
             Button(action: {
-                inputTextValidityState = isTextValid(inputText) ? .valid : .invalid
+                viewModel.validateButtonWasTapped()
             }, label: {
-                Text(buttonTitle(for: inputTextValidityState))
+                Text(buttonTitle(for: viewModel.inputTextValidityState))
             })
             .padding(5)
             .background(
                 RoundedRectangle(cornerRadius: 10.0)
-                    .fill(borderColor(for: inputTextValidityState))
+                    .fill(borderColor(for: viewModel.inputTextValidityState))
             )
-            .disabled(inputText.isEmpty)
+            .disabled(viewModel.inputText.isEmpty)
+            .onReceive(viewModel.$inputText, perform: { _ in
+                viewModel.textWasChanged()
+            })
         }
         .padding()
-    }
-}
-
-// MARK: - TextValidityState
-
-private extension ContentView {
-    enum TextValidityState {
-        case valid
-        case invalid
-        case unknown
     }
 }
 
 // MARK: - Private methods
 
 private extension ContentView {
-    func isTextValid(_ text: String) -> Bool {
-        false
-    }
-
-    func borderColor(for textValidityState: TextValidityState) -> Color {
+    func borderColor(for textValidityState: ViewModel.TextValidityState) -> Color {
         switch textValidityState {
         case .valid: .green
         case .invalid: .red
@@ -61,7 +49,7 @@ private extension ContentView {
         }
     }
 
-    func buttonTitle(for textValidityState: TextValidityState) -> String {
+    func buttonTitle(for textValidityState: ViewModel.TextValidityState) -> String {
         switch textValidityState {
         case .valid: "All parentheses are paired!"
         case .invalid: "Something wrong with your string"

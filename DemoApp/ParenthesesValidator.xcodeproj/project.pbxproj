@@ -10,6 +10,7 @@
 		EBAA84082BF4B3B0003DBB45 /* ParenthesesValidatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA84072BF4B3B0003DBB45 /* ParenthesesValidatorApp.swift */; };
 		EBAA840A2BF4B3B0003DBB45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA84092BF4B3B0003DBB45 /* ContentView.swift */; };
 		EBAA840C2BF4B3B1003DBB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAA840B2BF4B3B1003DBB45 /* Assets.xcassets */; };
+		EBAA84172BF537E7003DBB45 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA84162BF537E7003DBB45 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		EBAA84092BF4B3B0003DBB45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBAA840B2BF4B3B1003DBB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBAA84102BF4B3B1003DBB45 /* ParenthesesValidator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParenthesesValidator.entitlements; sourceTree = "<group>"; };
+		EBAA84162BF537E7003DBB45 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			children = (
 				EBAA84072BF4B3B0003DBB45 /* ParenthesesValidatorApp.swift */,
 				EBAA84092BF4B3B0003DBB45 /* ContentView.swift */,
+				EBAA84162BF537E7003DBB45 /* ViewModel.swift */,
 				EBAA840B2BF4B3B1003DBB45 /* Assets.xcassets */,
 				EBAA84102BF4B3B1003DBB45 /* ParenthesesValidator.entitlements */,
 			);
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBAA840A2BF4B3B0003DBB45 /* ContentView.swift in Sources */,
+				EBAA84172BF537E7003DBB45 /* ViewModel.swift in Sources */,
 				EBAA84082BF4B3B0003DBB45 /* ParenthesesValidatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
