@@ -14,8 +14,8 @@ readonly MACOS_ARCHIVE_NAME="${FRAMEWORK_NAME}-macOS.xcarchive"
 
 # creating .xcarchive for specified platform
 create_archive() {
-    platform=$1
-    archive_name=$2
+    platform=${1}
+    archive_name=${2}
 
     xcodebuild archive \
         -project "${PROJECT_ROOT_FOLDER}/${FRAMEWORK_NAME}.xcodeproj" \
@@ -42,7 +42,7 @@ xcodebuild -create-xcframework \
     -output "${OUTPUT_FOLDER}/${FRAMEWORK_NAME}.xcframework"
 
 # creating .zip
-cd "$OUTPUT_FOLDER"
+cd "${OUTPUT_FOLDER}"
 zip -r "${FRAMEWORK_NAME}.xcframework.zip" "${FRAMEWORK_NAME}.xcframework"
 
 # cleanup
