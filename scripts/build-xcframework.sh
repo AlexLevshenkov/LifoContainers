@@ -43,5 +43,3 @@ zip -r "${FRAMEWORK_NAME}.xcframework.zip" "${FRAMEWORK_NAME}.xcframework"
 
 # cleanup
 rm -rf "${TEMP_ARCHIVE_FOLDER}"
-
-open "${OUTPUT_FOLDER}"
