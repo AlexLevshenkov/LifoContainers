@@ -1,5 +1,5 @@
+import LifoContainers
 import XCTest
-@testable import LifoContainers
 
 final class StackStatisticsGenericTypeTestCases: XCTestCase {
     func test_init_withDifferentTypes() {

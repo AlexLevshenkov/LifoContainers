@@ -1,8 +1,8 @@
+import LifoContainers
 import XCTest
-@testable import LifoContainers
 
 final class StackStatisticsTopTestCases: XCTestCase {
-    private var stack: StackStatistics<Int>!
+    private var stack = StackStatistics<Int>()
 
     override func setUp() {
         super.setUp()
