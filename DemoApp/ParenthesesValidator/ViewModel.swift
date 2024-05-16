@@ -1,4 +1,5 @@
 import Foundation
+import LifoContainers
 
 // MARK: - ViewModel
 
@@ -19,7 +20,31 @@ final class ViewModel: ObservableObject {
 
 private extension ViewModel {
     func isTextValid(_ text: String) -> Bool {
-        false
+        guard text.count > 1 else { return false }
+
+        var stack = Stack<Character>()
+
+        for letter in text {
+            guard ["(", ")", "[", "]", "{", "}"].contains(letter) else { continue }
+
+            switch letter {
+            case "(":
+                stack.push(")")
+            case "{":
+                stack.push("}")
+            case "[":
+                stack.push("]")
+
+            default:
+                if stack.count == 0 { return false }
+
+                let lastChar = stack.pop()
+
+                if letter != lastChar { return false }
+            }
+        }
+
+        return stack.count == 0
     }
 }
 
