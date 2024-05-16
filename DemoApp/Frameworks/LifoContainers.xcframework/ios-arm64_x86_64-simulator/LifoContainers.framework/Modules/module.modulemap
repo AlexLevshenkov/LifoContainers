@@ -1,0 +1,6 @@
+framework module LifoContainers {
+  umbrella header "LifoContainers.h"
+  export *
+
+  module * { export * }
+}
