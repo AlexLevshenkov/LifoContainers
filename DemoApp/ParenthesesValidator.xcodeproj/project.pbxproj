@@ -12,7 +12,6 @@
 		EBAA840A2BF4B3B0003DBB45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA84092BF4B3B0003DBB45 /* ContentView.swift */; };
 		EBAA840C2BF4B3B1003DBB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAA840B2BF4B3B1003DBB45 /* Assets.xcassets */; };
 		EBAA84172BF537E7003DBB45 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA84162BF537E7003DBB45 /* ViewModel.swift */; };
-		EBAA84422BF560BE003DBB45 /* LifoContainers.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAA84412BF560BE003DBB45 /* LifoContainers.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		EBAA840B2BF4B3B1003DBB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBAA84102BF4B3B1003DBB45 /* ParenthesesValidator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParenthesesValidator.entitlements; sourceTree = "<group>"; };
 		EBAA84162BF537E7003DBB45 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		EBAA84412BF560BE003DBB45 /* LifoContainers.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LifoContainers.xcframework; path = Frameworks/LifoContainers.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +29,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0974DE2BFE205900A82804 /* LifoContainers in Frameworks */,
-				EBAA84422BF560BE003DBB45 /* LifoContainers.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +40,6 @@
 			children = (
 				EBAA84062BF4B3B0003DBB45 /* ParenthesesValidator */,
 				EBAA84052BF4B3B0003DBB45 /* Products */,
-				EBAA84402BF560BE003DBB45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,14 +61,6 @@
 				EBAA84102BF4B3B1003DBB45 /* ParenthesesValidator.entitlements */,
 			);
 			path = ParenthesesValidator;
-			sourceTree = "<group>";
-		};
-		EBAA84402BF560BE003DBB45 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EBAA84412BF560BE003DBB45 /* LifoContainers.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
