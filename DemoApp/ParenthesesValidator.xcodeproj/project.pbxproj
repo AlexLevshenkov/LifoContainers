@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB0974DE2BFE205900A82804 /* LifoContainers in Frameworks */ = {isa = PBXBuildFile; productRef = EB0974DD2BFE205900A82804 /* LifoContainers */; };
 		EBAA84082BF4B3B0003DBB45 /* ParenthesesValidatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA84072BF4B3B0003DBB45 /* ParenthesesValidatorApp.swift */; };
 		EBAA840A2BF4B3B0003DBB45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAA84092BF4B3B0003DBB45 /* ContentView.swift */; };
 		EBAA840C2BF4B3B1003DBB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAA840B2BF4B3B1003DBB45 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0974DE2BFE205900A82804 /* LifoContainers in Frameworks */,
 				EBAA84422BF560BE003DBB45 /* LifoContainers.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = ParenthesesValidator;
+			packageProductDependencies = (
+				EB0974DD2BFE205900A82804 /* LifoContainers */,
+			);
 			productName = ParenthesesValidator;
 			productReference = EBAA84042BF4B3B0003DBB45 /* ParenthesesValidator.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = EBAA83FB2BF4B3B0003DBB45;
+			packageReferences = (
+				EB0974DC2BFE205900A82804 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = EBAA84052BF4B3B0003DBB45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -343,6 +351,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EB0974DC2BFE205900A82804 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB0974DD2BFE205900A82804 /* LifoContainers */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LifoContainers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EBAA83FC2BF4B3B0003DBB45 /* Project object */;
 }
