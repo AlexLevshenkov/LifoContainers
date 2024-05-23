@@ -12,7 +12,9 @@ let package = Package(
     products: [
         .library(
             name: "LifoContainers",
-            targets: ["LifoContainers"]),
+            type: .static,
+            targets: ["LifoContainers"]
+        ),
     ],
     targets: [
         .target(
