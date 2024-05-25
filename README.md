@@ -5,7 +5,7 @@ Library containing various flavours of Last-In-First-Out (LIFO) data structures.
 ## Contents
 
 - [Requirements](#requirements)
-- [Build `.xcframework` by yourself](#build-xcframework-by-yourself)
+- [Installation](#installation-guide)
 - [Demo application](#demo-application)
 - [Versioning](#versioning)
 - [Contributing](#contributing)
@@ -17,9 +17,40 @@ Library containing various flavours of Last-In-First-Out (LIFO) data structures.
 - Xcode 15.2+
 - Swift 5.9+
 
-## Build `.xcframework` by yourself
+## Installation Guide
 
-You may want to build the binary `.xcframework` file yourself from the source code. To do so you need to run the `build-xcframework.sh` script in a [scripts](./scripts/) folder or you may follow [instructions](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle#Create-archives-for-frameworks-or-libraries) provided by Apple.
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. `LifoContainers` supports SPM from `0.2.0` version.
+
+#### Add dependency to the project
+
+You can add `LifoContainers` to an Xcode project by [adding it as a package dependency](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app#Add-a-package-dependency):
+1. In Xcode, select "File" → "Swift Packages" → "Add Package Dependency";
+2. Enter "https://github.com/AlexLevshenkov/LifoContainers" into the package repository URL text field;
+
+#### Add dependency to the Swift package
+
+Once you have your Swift package set up, adding `LifoContainers` as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/AlexLevshenkov/LifoContainers", from: "<version>")
+]
+```
+
+### XCFrameworks
+
+Each [release](https://github.com/AlexLevshenkov/LifoContainers/releases) includes `*.xcframework` framework binaries.
+
+1. Download `*.xcframework.zip` from assets and unpack it;
+2. Open the Xcode project or workspace.
+3. Go to the target’s General configuration page.
+4. Add the framework target to the **Frameworks, Libraries, and Embedded Content** section by clicking the **Add(+)** button
+
+#### Build `.xcframework` by yourself
+
+You may want to build the binary `.xcframework` file yourself from the source code. To do so you need to run the `build-xcframework.sh` script in a [scripts](./scripts/) folder which places the result `.xcframework` file into the `build` folder. Or you may follow the [instructions](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle#Create-archives-for-frameworks-or-libraries) provided by Apple.
 
 ## Demo application
 
