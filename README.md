@@ -31,7 +31,7 @@ You can add `LifoContainers` to an Xcode project by [adding it as a package depe
 
 #### Add dependency to the Swift package
 
-Once you have your own Swift package set up, adding `LifoContainers` as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`:
+Once you have your own Swift package set up, adding `LifoContainers` as a dependency is as easy as adding it to the [`dependencies` value](https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode#Add-a-dependency-on-another-Swift-package) of your `Package.swift`:
 
 ```swift
 dependencies: [
