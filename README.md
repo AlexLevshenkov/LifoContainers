@@ -47,6 +47,7 @@ Each [release](https://github.com/AlexLevshenkov/LifoContainers/releases) includ
 2. Open the Xcode project or workspace;
 3. Go to the target’s General configuration page;
 4. Add the framework target to the **Frameworks, Libraries, and Embedded Content** section by clicking the **Add(+)** button;
+5. Since `LifoContainers.xcframework` contains static libraries only we recommend choosing the "Do Not Embed" embed option;
 
 #### Build `.xcframework` by yourself
 
