@@ -26,12 +26,12 @@ The [Swift Package Manager](https://swift.org/package-manager/) is a tool for au
 #### Add dependency to the project
 
 You can add `LifoContainers` to an Xcode project by [adding it as a package dependency](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app#Add-a-package-dependency):
-1. In Xcode, select "File" → "Swift Packages" → "Add Package Dependency";
-2. Enter "https://github.com/AlexLevshenkov/LifoContainers" into the package repository URL text field;
+1. In Xcode, select "File" → "Add Package Dependencies...";
+2. Enter "https://github.com/AlexLevshenkov/LifoContainers" into the "Search or Enter Package URL" search bar;
 
 #### Add dependency to the Swift package
 
-Once you have your Swift package set up, adding `LifoContainers` as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`:
+Once you have your own Swift package set up, adding `LifoContainers` as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`:
 
 ```swift
 dependencies: [
