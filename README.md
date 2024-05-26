@@ -39,14 +39,14 @@ dependencies: [
 ]
 ```
 
-### XCFrameworks
+### XCFramework
 
-Each [release](https://github.com/AlexLevshenkov/LifoContainers/releases) includes `*.xcframework` framework binaries.
+Each [release](https://github.com/AlexLevshenkov/LifoContainers/releases) includes `*.xcframework` framework binary.
 
 1. Download `*.xcframework.zip` from assets and unpack it;
-2. Open the Xcode project or workspace.
-3. Go to the target’s General configuration page.
-4. Add the framework target to the **Frameworks, Libraries, and Embedded Content** section by clicking the **Add(+)** button
+2. Open the Xcode project or workspace;
+3. Go to the target’s General configuration page;
+4. Add the framework target to the **Frameworks, Libraries, and Embedded Content** section by clicking the **Add(+)** button;
 
 #### Build `.xcframework` by yourself
 
