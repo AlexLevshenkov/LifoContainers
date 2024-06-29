@@ -12,7 +12,8 @@
 public struct StackStatistics<Element: Comparable>: LIFO {
     /// The underlying storage of the elements of the stack.
     private var elements: [Element]
-    /// Keeps minimum elements in the stack. The current minimum is the element at the top of the stack.
+    /// Keeps minimum elements in the stack.
+    /// The current minimum is the element at the top of the stack.
     private var minimumElements = Stack<Element>()
 
     /// Creates a new instance of the `StackStatistics` with initial elements.
