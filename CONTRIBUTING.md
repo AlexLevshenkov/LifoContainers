@@ -42,7 +42,7 @@ When creating a pull request please consider following:
 
 You can run a script that can do all work for you. 
 
-- It has an option `-f` - linters correct violations whenever possible:
+- Run it with the `-f` option to ask linters correct violations whenever possible:
 
     ```bash
     chmod u+x ./scripts/run-linters.sh
