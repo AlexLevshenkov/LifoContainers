@@ -24,13 +24,11 @@ struct ContentView: View {
             }, label: {
                 Text(buttonTitle(for: viewModel.inputTextValidityState))
             })
-            // swiftlint:disable no_magic_numbers
             .padding(5)
             .background(
                 RoundedRectangle(cornerRadius: 10.0)
                     .fill(borderColor(for: viewModel.inputTextValidityState))
             )
-            // swiftlint:enable no_magic_numbers
             .disabled(viewModel.inputText.isEmpty)
             .onReceive(viewModel.$inputText, perform: { _ in
                 viewModel.textWasChanged()
