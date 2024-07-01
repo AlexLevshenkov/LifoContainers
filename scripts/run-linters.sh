@@ -3,7 +3,7 @@
 readonly SCRIPT_FOLDER=$(dirname -- "${0}")
 cd "${SCRIPT_FOLDER}" || exit
 
-readonly PROJECT_ROOT_FOLDER=".."
+readonly PROJECT_ROOT_FOLDER="../LifoContainers"
 readonly CONFIGS_FOLDER="../configs"
 
 readonly OPTSTRING=":f"
