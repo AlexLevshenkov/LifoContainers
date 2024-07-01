@@ -25,21 +25,35 @@ Before submitting a pull request, please search for [an open or closed pull requ
 When creating a pull request please consider following:
 
 - **Always make a new branch** for your work. This makes it easier for others to take just one set of changes form your repository.
-- **Follow our code style.** [SwiftFormat and SwiftLint](#code-linters-requirements) can do all work for you. You can run a script that can do all work for you:
-    ```bash
-    chmod u+x ./scripts/run-linters.sh
-    ./scripts/run-linters.sh
-    ```
-
-    You can find configuration for **SwiftFormat** and **SwiftLint** in the [configs](./configs/) folder.
-
+- **Follow our code style.** [SwiftFormat and SwiftLint](#code-linters) can do all work for you.
 - **Please do not submit unrelated changes** in the same pull request.
 - **Use a clear and descriptive title** for the pull request.
 - **Describe a clear list of things** that you have done in this pull request.
 - **Include relevant issue number** if applicable.
 - **Consider adding unit tests.** We'd be really grateful if you add unit test for your feature/bugfix!
 
-### Code linters requirements
+### Code linters 
 
+#### Requirements:
 - [SwiftFormat 0.53.8+](https://github.com/nicklockwood/SwiftFormat)
 - [SwiftLint 0.53.0+](https://github.com/realm/SwiftLint)
+
+#### Execution:
+
+You can run a script that can do all work for you. 
+
+- It has an option `-f` - linters correct violations whenever possible:
+
+    ```bash
+    chmod u+x ./scripts/run-linters.sh
+    ./scripts/run-linters.sh -f
+    ```
+
+- Without the `-f` option linters only print lint warnings and errors:
+
+    ```bash
+    chmod u+x ./scripts/run-linters.sh
+    ./scripts/run-linters.sh
+    ```
+
+You can find configuration for **SwiftFormat** and **SwiftLint** in the [configs](./configs/) folder.
