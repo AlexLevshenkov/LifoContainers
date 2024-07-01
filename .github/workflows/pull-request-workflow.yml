@@ -30,6 +30,16 @@ jobs:
             - name: update-brew
               run: brew update
 
+            - name: search-for-cache
+              uses: actions/cache@v4
+              with:
+                path: |
+                  ~/Library/Caches/Homebrew/swiftformat*
+                  ~/Library/Caches/Homebrew/swiftlint*
+                  ~/Library/Caches/Homebrew/downloads/*swiftformat*
+                  ~/Library/Caches/Homebrew/downloads/*swiftlint*
+                key: linters-brew-cache-key
+
             - name: install-linters
               run: |
                 brew install swiftformat
