@@ -45,7 +45,7 @@ jobs:
                 brew install swiftformat
                 brew install swiftlint
 
-            - name: linting
+            - name: add-x-permission-and-execute-run-linters-sh
               run: |
                 chmod +x ./scripts/run-linters.sh
                 sh ./scripts/run-linters.sh
