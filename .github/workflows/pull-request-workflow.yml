@@ -48,4 +48,4 @@ jobs:
       - name: add-x-permission-and-execute-run-linters-sh
         run: |
           chmod +x ./scripts/run-linters.sh
-          sh ./scripts/run-linters.sh
+          ./scripts/run-linters.sh
