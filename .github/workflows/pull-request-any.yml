@@ -30,7 +30,7 @@ jobs:
       - name: update-brew
         run: brew update
 
-      - name: search-for-cache
+      - name: search-for-cached-brew-formulaes
         uses: actions/cache@v4
         with:
           path: |
@@ -45,7 +45,7 @@ jobs:
           brew install swiftformat
           brew install swiftlint
 
-      - name: add-x-permission-and-execute-run-linters-sh
+      - name: run-linters-as-a-script
         run: |
           chmod +x ./scripts/run-linters.sh
           ./scripts/run-linters.sh
