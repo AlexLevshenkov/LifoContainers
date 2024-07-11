@@ -1,4 +1,4 @@
-name: pull-request-checks
+name: check-codestyle-and-run-unit-tests-on-pull-request
 run-name: ${{ github.triggering_actor }} has started mandatory checks
 
 on: [pull_request]
