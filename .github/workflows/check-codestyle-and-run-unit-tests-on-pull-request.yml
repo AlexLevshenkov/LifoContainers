@@ -1,0 +1,51 @@
+name: check-codestyle-and-run-unit-tests-on-pull-request
+run-name: ${{ github.triggering_actor }} has started mandatory checks
+
+on: [pull_request]
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_15.4.app/Contents/Developer
+
+jobs:
+  run-tests:
+    runs-on: macos-14
+    steps:
+      - name: checkout-repo
+        uses: actions/checkout@v4
+
+      - name: testing
+        working-directory: ./LifoContainers
+        run: |
+          xcodebuild \
+            -project LifoContainers.xcodeproj \
+            -scheme LifoContainersTests \
+            test
+
+  run-linters:
+    runs-on: macos-14
+    steps:
+      - name: checkout-repo
+        uses: actions/checkout@v4
+
+      - name: update-brew
+        run: brew update
+
+      - name: search-for-cached-brew-formulaes
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/Library/Caches/Homebrew/swiftformat*
+            ~/Library/Caches/Homebrew/swiftlint*
+            ~/Library/Caches/Homebrew/downloads/*swiftformat*
+            ~/Library/Caches/Homebrew/downloads/*swiftlint*
+          key: linters-brew-cache-key
+
+      - name: install-linters
+        run: |
+          brew install swiftformat
+          brew install swiftlint
+
+      - name: run-linters-as-a-script
+        run: |
+          chmod +x ./scripts/run-linters.sh
+          ./scripts/run-linters.sh
